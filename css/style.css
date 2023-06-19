@@ -1,0 +1,133 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html,body{
+    height: 100%;
+    box-sizing: border-box;
+}
+body{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+.box{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-image: url(imagens/dark-clouds-during-rainy-weather.jpg);
+    background-size: cover;
+    width: 95%;
+    height: 90vh;
+    border-radius: 19px;
+}
+#tempo, .info_time{
+    width: 1fr;
+    height: 64%;
+    background: rgba(5, 25, 60, 0.9);
+    background-blend-mode: luminosity;
+    border-radius: 19px;
+    margin: 60px 39px;
+}
+#tempo{
+    
+        color: white;
+    }
+
+.info_time{
+    display: grid;
+    
+
+}
+.clock{
+    text-align: center;
+    margin: 28px 0px;
+    font-size: 80px;
+    color: white;
+}
+#tempo span.cidade{
+    font-family: inter;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    margin: 30px 0px;
+    align-items: center;
+    color: white
+}
+#tempo span.temperatura{
+    font-family: inter;
+    font-style: normal;
+    font-size: 60px;
+    margin-left: 68px ;
+    
+    justify-content:left;
+}
+#tempo #C{
+    display: inline-block;
+    font-size: 30px;
+    margin-left: 10px;
+}
+.full-time{
+    margin: 5px 50px ;
+}
+.full-time > p{
+    display: inline-block;
+}
+.descricaos .descricao{
+    margin: 5px 80px ;
+    font-weight: 800;
+}
+
+#tempo .img-clima{
+    display: inline-block;
+    justify-content: flex-end;
+    position: relative;
+    bottom: 150px;
+    margin-left: 290px;
+    
+}
+input#value{
+    width: 190px;
+    height: 30px;
+    border-radius: 6px;
+    border: 1px solid black;
+    padding-left: 10px;
+}
+
+input#value::placeholder{
+    padding-left: 5px;
+    color: black;
+}
+.button > #search-button {
+    height: 33px;
+    background-color: rgba(5, 25, 60, 0.9);
+    color: white;
+    border-radius: 6px;
+    padding: 5px 5px ;
+    cursor: pointer;
+}
+.saiba-mais{
+    display: flex;
+    justify-content: center;
+    
+}
+.saiba-mais > a{
+    margin-bottom: 50px;
+    padding: 20px 90px;
+    height: max-content;
+    width: max-content;
+    border-radius: 6px;
+    color: rgba(138, 171, 228, 0.9);
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+    box-shadow: black 6px 7px 8px;
+    text-decoration: none;
+}
+.saiba-mais > a:hover{
+    transition: 1s;
+    color: white;
+    background-color: rgba(5, 25, 60, 0.9);
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+    <title>Clima</title>
+</head>
+<body>
+    <div class="button">
+
+    <input type="text" id="value" placeholder="Digite a cidade">
+<button id="search-button">Pesquisar</button>
+    </div><!---botao--->
+    <main class="box">
+        
+        <div class="info_time">
+            
+            <div class="clock"></div><!--Relogio--->
+            <div class="saiba-mais">
+                <a href="/Portifolio.html" target="_blank" rel="noopener noreferrer"> Saiba Mais</a>
+        
+            </div>
+
+        </div> <!---Conteudo do tempo mes e ano *Sobre mim*--->   
+        <div id="tempo">
+                <div class="temp-time">
+                <span class="cidade"></span>
+                </div> <!---CIDADE --->
+                <div class="temperaturas">
+                <span class="temperatura"></span><p id="C">°C</p>
+                </div> <!---Temperatura principal--->
+                <div class="full-time">
+                <p id="temp-min">Temperatura minima:</p><span class="temperatura-minima"></span> °C
+                </div><!--Temperatura minina--->
+                <div class="full-time">
+                    <p id="temp-min">Temperatura maxima:</p>
+                <span class="temperatura-maxima"></span>°C </div>
+                <div class="descricaos">
+                <span class="descricao"></span>
+                </div> <!--Descrição--->
+
+                <div class="img-clima">
+                    <img class="clima" alt="Clima" width= "180px" height="180px">
+                </div>
+
+
+
+        </div><!--Conteudo de previsão e informações da cidade! -->
+      
+
+    </main>
+    <script src="./script.js"></script> 
+</body>
